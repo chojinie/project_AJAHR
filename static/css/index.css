@@ -133,5 +133,9 @@ body {
   font-size: smaller;
 }
 
-
-
+.gradient-text {
+  background: linear-gradient(to right, #f54c7d, #ff6d3f, #b037a7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
