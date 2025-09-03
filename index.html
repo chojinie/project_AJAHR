@@ -171,32 +171,25 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/overall_architecture.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          The proposed model takes typical human pose datasets and the A3D dataset—a synthetic dataset of amputated individuals—as input. It employs BPAC-Net, a body- part amputation classier, to detect limb absence and uses this information to guide mesh recovery for both amputees and non-amputees. Based on the predicted body-part status, the model connects to different pre-trained tokenizers, which remain frozen during training while the rest of the model is optimized accordingly.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/comparison_of_dataset.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Comparison of datasets. * indicates that the number of images refers to frames extracted from videos.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/qualitative_result.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          A qualitative comparison with other Human Mesh Recovery methods trained on the A3D Dataset. Unlike TokenHMR, HMR2.0, and BEDLAM-CLIFF, which do not employ BPAC-Net to identify amputated regions, AJAHR leverages BPAC-Net to explicitly represent these regions in the input images.
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
