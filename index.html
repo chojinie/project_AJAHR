@@ -111,7 +111,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Existing human mesh recovery methods assume a standard human body structure...
+              <p>Existing human mesh recovery methods assume a standard human body structure, overlooking diverse anatomical conditions such as limb loss. This assumption introduces bias when applied to individuals with amputations—a limitation further exacerbated by the scarcity of suitable datasets. To address this gap, we propose Amputated Joint Aware 3D Human Mesh Recovery (AJAHR), which is an adaptive pose estimation framework that improves mesh reconstruction for individuals with limb loss. Our model integrates a body-part amputation classifier, jointly trained with the mesh recovery network, to detect potential amputations. We also introduce Amputee 3D (A3D), which is a synthetic dataset offering a wide range of amputee poses for robust training. While maintaining competitive performance on non-amputees, our approach achieves state-ofthe-art results for amputated individuals.
             </p>
           </div>
         </div>
@@ -128,7 +128,9 @@
           <!-- Architecture -->
           <div class="item">
             <img src="static/images/overall_architecture.png" alt="Architecture"/>
-            <h2 class="subtitle">The proposed model ...</h2>
+            <h2 class="subtitle">The proposed model takes typical human pose datasets and the A3D dataset—a synthetic dataset of amputated individuals—as input. It employs BPAC-Net, a body- part amputation classier, to detect limb absence and uses this information to guide mesh recovery for both amputees and non-amputees. Based on the predicted body-part status, the model connects to different pre-trained tokenizers, which remain frozen during training while the rest of the model is optimized accordingly.
+
+            </h2>
           </div>
 
           <!-- Dataset -->
@@ -136,13 +138,17 @@
             <figure class="image">
               <img src="static/images/comparison_of_dataset.png" alt="Dataset Comparison" style="max-width:100%; height:auto;"/>
             </figure>
-            <h2 class="subtitle">Comparison of datasets...</h2>
+            <h2 class="subtitle">Comparison of datasets. * indicates that the number of images refers to frames extracted from videos.
+
+            </h2>
           </div>
 
           <!-- Qualitative -->
           <div class="item">
             <img src="static/images/qualitative_result.png" alt="Qualitative Result"/>
-            <h2 class="subtitle">A qualitative comparison ...</h2>
+            <h2 class="subtitle">A qualitative comparison with other Human Mesh Recovery methods trained on the A3D Dataset. Unlike TokenHMR, HMR2.0, and BEDLAM-CLIFF, which do not employ BPAC-Net to identify amputated regions, AJAHR leverages BPAC-Net to explicitly represent these regions in the input images.
+              
+            </h2>
           </div>
 
           <!-- para1 -->
