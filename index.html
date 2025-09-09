@@ -2,40 +2,29 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base href="/project_AJAHR/"><!-- 요거 추가! -->
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
+  <base href="/project_AJAHR/">
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="https://chojinie.github.io/project_AJAHR/" />
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>AJAHR: Amputated Joint Aware 3D Human Mesh Recovery</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -47,7 +36,7 @@
 </head>
 <body>
 
-
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -55,279 +44,123 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">AJAHR: <br>Amputated Joint Aware <br>3D Human Mesh Recovery</h1>
             <h2 class="gradient-text" style="font-size: 2rem; margin-bottom: 1rem;">ICCV 2025</h2>
+            <!-- Authors -->
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://chojinie.github.io/" target="_blank">Hyunjin Cho</a><sup>1,3</sup><sup>*</sup>,
-                </span>
-                <span class="author-block">
-                  <a href="https://example.com/giyun" target="_blank">Giyun Choi</a><sup>1</sup><sup>*</sup>,
-                  </span>
-                  <span class="author-block">
-                    <a href="https://www.vilab.cau.ac.kr/" target="_blank">Jongwon Choi</a><sup>1,2</sup><sup>†</sup>
-                  </span>                  
-                  </div>
-                  
-                  <div class="is-size-6 publication-authors">
-                    <p>
-                      <sup>1</sup> Dept. of Advanced Imaging, GSAIM, Chung-Ang University, Seoul, Korea<br>
-                      <sup>2</sup> Dept. of Artificial Intelligence, Chung-Ang University, Seoul, Korea<br>
-                      <sup>3</sup> Korea Institute of Industrial Technology (KITECH), Seoul, Korea<br>
-                    </p>
-                  </div>
-                  
+              <span class="author-block"><a href="https://chojinie.github.io/" target="_blank">Hyunjin Cho</a><sup>1,3</sup><sup>*</sup>,</span>
+              <span class="author-block"><a href="https://example.com/giyun" target="_blank">Giyun Choi</a><sup>1</sup><sup>*</sup>,</span>
+              <span class="author-block"><a href="https://www.vilab.cau.ac.kr/" target="_blank">Jongwon Choi</a><sup>1,2</sup><sup>†</sup></span>
+            </div>
+            <div class="is-size-6 publication-authors">
+              <p>
+                <sup>1</sup> Dept. of Advanced Imaging, GSAIM, Chung-Ang University, Seoul, Korea<br>
+                <sup>2</sup> Dept. of Artificial Intelligence, Chung-Ang University, Seoul, Korea<br>
+                <sup>3</sup> Korea Institute of Industrial Technology (KITECH), Seoul, Korea<br>
+              </p>
+            </div>
+            <div class="is-size-5 publication-authors" style="margin-top: 1em;">
+              <span class="eql-cntrb"><small><sup>*</sup> Equal contribution</small></span><br>
+              <span class="eql-cntrb"><small><sup>†</sup> Corresponding author</small></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors" style="margin-top: 1em;"> 
-                    <span class="eql-cntrb"><small><sup>*</sup> Equal contribution</small></span><br>
-                    <span class="eql-cntrb"><small><sup>†</sup> Corresponding author</small></span>
-                  </div>                  
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/8295_supp.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/chojinie/AJAHR_official" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+            <!-- Links -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="static/pdfs/8295_supp.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Supplementary</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/chojinie/AJAHR_official" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
+
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Teaser image -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/teaser_pp.png" alt="Teaser Image" style="width:100%; height:auto;">
-      <h2 class="subtitle has-text-centered">
-        Examples of Human Mesh Recovery for Amputee and Non-Amputee Individuals. Column (a) shows input images: the top row includes a non-amputee (left) and an amputee (right), while the bottom row shows an amputee. Our method AJAHR (b) accurately handles both cases, whereas (c), (d), and (e) often misinterpret amputated limbs as intact and infer implausible poses in missing regions. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser image -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>Existing human mesh recovery methods assume a standard human body structure, overlooking diverse anatomical conditions such as limb loss. This assumption introduces bias when applied to individuals with amputations—a limitation further exacerbated by the scarcity of suitable datasets. To address this gap, we propose Amputated Joint Aware 3D Human Mesh Recovery (AJAHR), which is an adaptive pose estimation framework that improves mesh reconstruction for individuals with limb loss. Our model integrates a body-part amputation classifier, jointly trained with the mesh recovery network, to detect potential amputations. We also introduce Amputee 3D (A3D), which is a synthetic dataset offering a wide range of amputee poses for robust training. While maintaining competitive performance on non-amputees, our approach achieves state-ofthe-art results for amputated individuals.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/overall_architecture.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle">
-            The proposed model takes typical human pose datasets and the A3D dataset—a synthetic dataset of amputated individuals—as input. It employs BPAC-Net, a body- part amputation classier, to detect limb absence and uses this information to guide mesh recovery for both amputees and non-amputees. Based on the predicted body-part status, the model connects to different pre-trained tokenizers, which remain frozen during training while the rest of the model is optimized accordingly.
-          </h2>
-        </div>
-
-        <div class="item">
-          <figure class="image">
-            <img src="static/images/comparison_of_dataset.png" alt="Dataset Comparison" style="max-width:100%; height:auto;"/>
-          </figure>
-          <h2 class="subtitle">
-            Comparison of datasets. * indicates that the number of images refers to frames extracted from videos.
-          </h2>
-        </div>
-        
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/qualitative_result.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle">
-            A qualitative comparison with other Human Mesh Recovery methods trained on the A3D Dataset. Unlike TokenHMR, HMR2.0, and BEDLAM-CLIFF, which do not employ BPAC-Net to identify amputated regions, AJAHR leverages BPAC-Net to explicitly represent these regions in the input images.
-          </h2>
-        </div>
-
-        <!-- 새로 추가된 para1 -->
-        <div class="item">
-          <img src="static/images/para1.png" alt="" style="max-width:100%; height:auto;"/>
-        </div>
-
-        <!-- 새로 추가된 para2 -->
-        <div class="item">
-          <img src="static/images/para2.png" alt="" style="max-width:100%; height:auto;"/>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container"> -->
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static\pdfs\ajahr_poster_ai_symposium.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+  <!-- Teaser Image -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser_pp.png" alt="Teaser Image" style="width:100%; height:auto;">
+      </div>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
-
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page uses the 
-            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
-              Academic Project Page Template
-            </a>, adapted from the 
-            <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project. <br>
-            Licensed under 
-            <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
-              CC BY-SA 4.0
-            </a>.
-          </p>
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Existing human mesh recovery methods assume a standard human body structure...
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+          <!-- Architecture -->
+          <div class="item">
+            <img src="static/images/overall_architecture.png" alt="Architecture"/>
+            <h2 class="subtitle">The proposed model ...</h2>
+          </div>
 
-    <!-- End of Statcounter Code -->
+          <!-- Dataset -->
+          <div class="item">
+            <figure class="image">
+              <img src="static/images/comparison_of_dataset.png" alt="Dataset Comparison" style="max-width:100%; height:auto;"/>
+            </figure>
+            <h2 class="subtitle">Comparison of datasets...</h2>
+          </div>
 
-  </body>
-  </html>
+          <!-- Qualitative -->
+          <div class="item">
+            <img src="static/images/qualitative_result.png" alt="Qualitative Result"/>
+            <h2 class="subtitle">A qualitative comparison ...</h2>
+          </div>
+
+          <!-- para1 -->
+          <div class="item">
+            <img src="static/images/para1.png?v=1" alt="para1"
+                 style="max-width:100%; height:auto; border:1px solid red; background:#ccc;"/>
+          </div>
+
+          <!-- para2 -->
+          <div class="item">
+            <img src="static/images/para2.png?v=1" alt="para2"
+                 style="max-width:100%; height:auto;"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
